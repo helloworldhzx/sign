@@ -1,8 +1,4 @@
 module.exports = {
-    ding: {
-        baseUrl: 'https://oapi.dingtalk.com/robot/send',
-        token: 'b6b431df931e07a6fc67a23563cb33f580b8258fa0cbd8b1889f8eba996256b2'
-    },
     "email": {
         "qq": {
             "user": "657070781@qq.com",
