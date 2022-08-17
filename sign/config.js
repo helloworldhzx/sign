@@ -4,7 +4,7 @@ module.exports = {
             "user": "657070781@qq.com",
             "from": "657070781@qq.com",
             "to": "657070781@qq.com",
-            "pass": "iiqmwvrzbmppbahj"
+            "pass": process.env.pass
         }
     },
     juejin: {
@@ -32,7 +32,7 @@ module.exports = {
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67',
     users: [
         {
-            cookie: `_ga=GA1.2.2017615439.1637047909; MONITOR_WEB_ID=cf011004-3869-4f2e-a6eb-194a571e98ee; __tea_cookie_tokens_2608=%257B%2522user_unique_id%2522%253A%25227031067200757990952%2522%252C%2522web_id%2522%253A%25227031067200757990952%2522%252C%2522timestamp%2522%253A1642730121524%257D; _tea_utm_cache_2608={%22utm_source%22:%22infinitynewtab.com%22}; passport_csrf_token=dd06d0955ff57d52ac6447e080f3313b; passport_csrf_token_default=dd06d0955ff57d52ac6447e080f3313b; _tea_utm_cache_2018={%22utm_source%22:%22infinitynewtab.com%22}; n_mh=3x7Ok1FmXpLLPzuCU_KT6Qs63qMbOYmR3ohadwYbJZg; passport_auth_status=e24a3bcee067a9f424354060b6e47614%2C; passport_auth_status_ss=e24a3bcee067a9f424354060b6e47614%2C; sid_guard=17e7b02ca061c73cf660d578833b3707%7C1653010866%7C31536000%7CSat%2C+20-May-2023+01%3A41%3A06+GMT; uid_tt=40b1d971dd762631081e2517dc9835d2; uid_tt_ss=40b1d971dd762631081e2517dc9835d2; sid_tt=17e7b02ca061c73cf660d578833b3707; sessionid=17e7b02ca061c73cf660d578833b3707; sessionid_ss=17e7b02ca061c73cf660d578833b3707; sid_ucp_v1=1.0.0-KDVkOGY3OGRkM2FjOTk4NzQ4ZjY2MmJjYTM5YWU5NDc5YzZhNzdjZDEKFwj36fC__fW9AhCy45uUBhiwFDgCQPEHGgJsZiIgMTdlN2IwMmNhMDYxYzczY2Y2NjBkNTc4ODMzYjM3MDc; ssid_ucp_v1=1.0.0-KDVkOGY3OGRkM2FjOTk4NzQ4ZjY2MmJjYTM5YWU5NDc5YzZhNzdjZDEKFwj36fC__fW9AhCy45uUBhiwFDgCQPEHGgJsZiIgMTdlN2IwMmNhMDYxYzczY2Y2NjBkNTc4ODMzYjM3MDc; _gid=GA1.2.1774667302.1653268516`,
+            cookie: process.env.cookie,
             name: 'hzx',
             uid: "1398234521810167"
         }
