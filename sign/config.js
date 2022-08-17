@@ -4,7 +4,7 @@ module.exports = {
             "user": "657070781@qq.com",
             "from": "657070781@qq.com",
             "to": "657070781@qq.com",
-            "pass": process.env.pass
+            "pass": process.env.PASS || process.env.pass
         }
     },
     juejin: {
@@ -32,7 +32,7 @@ module.exports = {
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67',
     users: [
         {
-            cookie: process.env.cookie,
+            cookie:  process.env.COOKIE || process.env.cookie,
             name: 'hzx',
             uid: "1398234521810167"
         }
