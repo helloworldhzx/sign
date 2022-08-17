@@ -1,7 +1,7 @@
 const axios = require('axios')
 const nodeMailer = require('nodemailer');
 const { email } = require('./config')
-const connection = require("../database")
+// const connection = require("../database")
 module.exports = class SendInfo {
   messages = '掘金'
   constructor(who) {
@@ -11,9 +11,8 @@ module.exports = class SendInfo {
     this.messages += msgs.join('')
   }
   sendAllMsg(user) {
-    console.log(this.messages)
     this.sendMsgByEmail(this.messages)
-    this.saveDatabase(this.messages, user)
+    // this.saveDatabase(this.messages, user)
   }
   saveDatabase(msg, user){
     const statement = "INSERT INTO log(`message`, `user`) VALUES (?, ?)"
