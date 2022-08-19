@@ -11,13 +11,16 @@ exports.juejin = () => {
       const user = users[index]
       const sender = new SendInfo(user)
      try{
-          await signIn(sender, user)
-      await draw(sender, user)
-      await dipLucky(sender, user)
-      await playGame(sender, user)
-      const msg = await getCurPoint(user)
-      sender.addMsg(msg)
-      sender.sendAllMsg(user)
+        await signIn(sender, user)
+        console.log("签到--------");
+        await draw(sender, user)
+        console.log("抽奖--------");
+        await dipLucky(sender, user)
+        console.log("沾喜气--------");
+        await playGame(sender, user)
+        const msg = await getCurPoint(user)
+        sender.addMsg(msg)
+        sender.sendAllMsg(user)
      }catch(error){
          console.log(error)
          sender.addMsg("签到失败")
