@@ -11,8 +11,8 @@ exports.juejin = () => {
       const user = users[index]
       const sender = new SendInfo(user)
      try{
-        await signIn(sender, user)
-        console.log("签到--------");
+//         await signIn(sender, user)
+//         console.log("签到--------");
         await draw(sender, user)
         console.log("抽奖--------");
         await dipLucky(sender, user)
