@@ -19,7 +19,7 @@ exports.juejin = () => {
         console.log("抽奖--------");
         await dipLucky(sender, user)
         console.log("沾喜气--------");
-        await playGame(sender, user)
+//         await playGame(sender, user)
         const msg = await getCurPoint(user)
         sender.addMsg(msg)
         sender.sendAllMsg(user)
