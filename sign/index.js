@@ -2,6 +2,7 @@ const dipLucky = require('./dipLucky')
 const draw = require('./draw')
 const signIn = require('./signIn')
 const vpnSignIn = require('./vpnSignIn')
+const cySign = require('./cySign')
 const playGame = require('./playGame')
 const SendInfo = require('./sendInfo')
 const { users } = require('./config')
@@ -15,6 +16,7 @@ exports.juejin = () => {
 //         await signIn(sender, user)
 //         console.log("签到--------");
         vpnSignIn()
+        cySign()
         await draw(sender, user)
         console.log("抽奖--------");
         await dipLucky(sender, user)
