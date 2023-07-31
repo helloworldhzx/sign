@@ -16,6 +16,15 @@ const checkIn = async (user) => {
         Authorization, token
       }
   })
+ let {data: data2} = await  instance({
+    url: 'https://api.xunyee.cn/xunyee/vcuser_person/person_info/?person=177801',
+    method: 'get',
+    headers: {
+      Authorization, token
+    }
+  }).then(res => {
+    console.log(res.data);
+  })
   console.log(data);
 }
 
