@@ -9,7 +9,7 @@ const checkIn = async (user) => {
       url: 'https://api.xunyee.cn/signin/vcuser_person_check/',
       method: 'post',
       params: {
-        person: 17780,
+        person: 177801,
         check: 1
       },
       headers: {
